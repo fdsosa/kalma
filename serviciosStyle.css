@@ -11,19 +11,25 @@
 }
 
 .titleHeader{
-	color: rgb(0, 133, 255);
+	color: #3e1cc7;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 	font-family: 'Pacifico', cursive;
-	font-size: auto;
+	font-size: 23px;
 }
 
 .navbar-light{
-	color: blue;
 	text-decoration: none;
 	font-family: 'Rubik', sans-serif;
+	font-size: 19px;
+}
+
+.nav-link:hover{
+	background-color: #ef8d72;
+	border-radius: 4px;
 }
 
 .navbar{
-	border-bottom: 2px rgba(30, 11, 134, 0.64) solid;
+	border-bottom: 2px rgba(255, 142, 111, 0.4) solid;
 }
 
 .navbar .dropdown .dropdown-menu{
@@ -43,7 +49,7 @@
 
 /* TITULO */
 #sectionTitulo .carousel-inner img{
-	height:80vh;
+	height:50vh;
 	object-fit: cover;
 	filter: blur(60%);
 }
@@ -75,12 +81,7 @@
 	font-size: 160px;
 	color: white;
 	font-family: 'Pacifico', cursive;
-}
-
-#subTitulo{
-	font-size: 80px;
-	color: white;
-	font-family: 'Pacifico', cursive;
+	text-shadow: 2px 2px 8px #FF0000;
 }
 /* /TITULO */
 
@@ -123,24 +124,42 @@ p{
 	border-top: 2px #ff8e6f solid;
 }
 
+.footer{
+	margin-top: 150px;
+}
+
 .footer p{
 	color: rgba(0, 0, 0, 0.7);
+	font-family: 'Rubik', sans-serif;
 }
 
-.imgFooter{
-	height: 45px;
-	width: 45px;
+.footer .col-lg-3,
+.footer .col-md{
+	display: flex;
+	align-items: center;
 }
-
 .footer .row .columna2 p{
 	text-align: center;
+}
+
+.columna1,
+.columna2,
+.columna3{
+	justify-content: center;
+}
+
+.columna3 .fa-facebook-square{
+	padding-right: 25px;
 }
 
 .footer .row i{
 	justify-content: center;
 	text-decoration: none;
 	color: rgba(0, 0, 0, 0.7);
-	margin-left: 25px;
+}
+
+.footer .row i:hover {
+	color: rgba(255,167,138,1);
 }
 
 /* /FOOTER*/
@@ -156,8 +175,9 @@ p{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa78a', endColorstr='#fcc4b3', GradientType=1 );
 }
 
-@media screen and (max-width: 480px){
-	
+.row h4{
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.8);
 }
 
 @media screen and (max-width: 992px){
@@ -185,15 +205,15 @@ p{
 	.navbar a{
 		text-align: center;
 	}
+
+	.footer{
+		margin-top: 0px;
+	}
 }
 
 @media screen and (max-width: 768px){
 	#titulo{
-		font-size: 140px;
-	}
-
-	#subTitulo{
-		font-size: 45px;
+		font-size: 100px;
 	}
 
 	.footer p{
@@ -209,12 +229,14 @@ p{
 	}
 }
 
-@media screen and (max-width: 576){
+@media screen and (max-width: 576px){
 	#titulo{
-		font-size: 110px;
+		font-size: 70px;
 	}
+}
 
-	#subTitulo{
-		font-size: 40px;
+@media screen and (max-width: 400px){
+	#titulo{
+		font-size: 50px;
 	}
 }
