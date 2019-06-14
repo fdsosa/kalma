@@ -1,0 +1,32 @@
+{
+  "name": "nueva-carpeta",
+  "version": "1.0.0",
+  "description": ".",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fdsosa/kalma.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fdsosa/kalma/issues"
+  },
+  "homepage": "https://github.com/fdsosa/kalma#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-teddy": "^1.6.1",
+    "node-sass": "^4.12.0",
+    "sass": "^1.21.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
