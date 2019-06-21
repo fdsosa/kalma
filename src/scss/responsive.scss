@@ -1,0 +1,54 @@
+/* NAVBAR */
+.navbar{
+    a{
+        text-align: center;
+    }
+}
+
+/* TITLE */
+#titleSection{
+    #titulo{
+        font-size: 140px;
+    }
+
+    #subTitulo{
+        font-size: 60px;
+    }
+}
+
+/* CONTENT */
+.container-fluid{
+    margin: 0;
+
+    #gridInfo{
+        margin-bottom: 0;
+        
+        .boxInfo{
+            border-radius: 0;
+            margin: 0;
+        }
+    }
+}
+
+/* FOOTER */
+.footer{
+    margin-top: 0px;
+    p{
+		text-align: center;
+    }
+    
+    i{
+		margin-left: 0px;
+    }
+    
+    .columna3{
+		justify-content: center;
+	}
+}
+
+
+@media screen and (max-width: 480px){
+	.gridContainer{
+		grid-template-columns: 1fr;
+	}
+}
