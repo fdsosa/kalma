@@ -3,7 +3,8 @@ var clean       = require('gulp-clean');
 var browserSync = require('browser-sync');
 var reload      = browserSync.reload;
 var teddy       = require('gulp-teddy').settings({
-    setTemplateRoot: 'src/templates/'
+    setTemplateRoot: 'src/templates/',
+    compileAtEveryRender: true
 });
 var sass          = require('gulp-sass');
     sass.compiler = require('node-sass');
@@ -54,7 +55,7 @@ gulp.task('build:sass:prod', function () {
   console.log('Build sass files has started');
 
   return gulp
-      .src('./src/**/*.scss')
+      .src('./src/scss/*.scss')
       .pipe(sass())
       .pipe(gulp.dest('./dist/css'));
 });
@@ -65,7 +66,7 @@ gulp.task('build:files', function () {
     return gulp
       .src([
         './src/*',
-        './src/**/*.jpg',
+        './src/**/*jpg',
         '!./src/templates',
         '!./src/scss',
         '!./src/*.html',
@@ -81,7 +82,9 @@ gulp.task('build:files:prod', function () {
   return gulp
     .src([
       './src/*',
+      './src/**/*jpg',
       '!./src/templates',
+      '!./src/scss',
       '!./src/*.html',
       '!./src/**/*.scss'
     ])
@@ -90,17 +93,15 @@ gulp.task('build:files:prod', function () {
   
 gulp.task('build:dev', gulp.series(['clean', 'build:html', 'build:sass', 'build:files']));
 
-gulp.task('build:prod', gulp.series('build:html:prod', 'build:sass:prod', 'build:files:prod'));
-
 gulp.task('watch', gulp.series(['build:dev'], function(done) {
-    gulp.watch('./src/**/*', gulp.series(['build:dev']));
-    done();
+  gulp.watch('./src/**/*', gulp.series(['build:dev']));
+  done();
 }));
 
-gulp.task('serve', gulp.series(['watch'], function () {
-    console.log("Serve has started");
-    
-    browserSync({
+gulp.task('build:prod', gulp.series('build:html:prod', 'build:sass:prod', 'build:files:prod'));
+
+gulp.task('default', gulp.series(['watch'], function(){
+  browserSync({
       server: {
         baseDir: './.temp'
       }
