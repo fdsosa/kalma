@@ -45,10 +45,3 @@
 		justify-content: center;
 	}
 }
-
-
-@media screen and (max-width: 480px){
-	.gridContainer{
-		grid-template-columns: 1fr;
-	}
-}
