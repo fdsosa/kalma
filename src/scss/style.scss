@@ -8,7 +8,7 @@ html{
 .navbar{
 	border-bottom: 2px $primary-color-detail solid;
 
-	&.navbar-light{
+	&.navbar-dark{
 		text-decoration: none;
 		font-family: 'Rubik', sans-serif;
 		font-size: 19px;
@@ -31,16 +31,18 @@ html{
 		justify-content: flex-end;
 
 		ul{
-			li{
-				a{
-					color: $secondary-color !important;
 
-					.nav-link{
-						&:hover{
-							background-color: #ef8d72;
-							border-radius: 4px;
-						}
-					}
+			li{
+				transition: background-color 0.5s ease;
+
+				a{
+					color: $secondary-color;
+					font-family: 'Josefin Sans', sans-serif;
+				}
+
+				&:hover{
+					background-color: $primary-color-detail;
+					border-radius: 4px;
 				}
 			}
 			.dropdown{
@@ -50,7 +52,7 @@ html{
 
 					.dropdown-item{
 						color: $secondary-color;
-						font-family: 'Rubik', sans-serif;
+						font-family: 'Josefin Sans', sans-serif;
 
 						&:hover{
 							background-color: $primary-color;
@@ -123,45 +125,53 @@ html{
 #gridInfo{
 	margin-bottom: 15px;
 
-	.row{
+	.boxMenu{
+		margin-top: 20px;
+		color:  $secondary-color;
+		width: 25%;
+		max-width: 25%;
 
-		.boxMenu{
-			margin-top: 20px;
-			color:  $secondary-color;
+		.row{
+			padding: 1em;
+			background-color: $primary-color;
+			margin-left: 0;
+			margin-top: 30px;
 
-			.row{
-				padding: 1em;
-				background-color: $primary-color;
-				margin-left: 0;
+			h4{
+				text-align: center;
+				font-family: 'Lobster', cursive;
+			}
 
-				h4{
-			 		text-align: center;
-					font-family: 'Lobster', cursive;
-				}
+			ul{
+				font-family: 'Josefin Sans', sans-serif;
+				font-size: 15px;
+				text-align: left;
+				margin: 0;
+				margin-top: 2em;
+				list-style-type: none;
+				width: 100%;
 
-				ul{
-					font-family: 'Josefin Sans', sans-serif;
-					font-size: 15px;
-					text-align: left;
-					margin: 0;
-					margin-top: 2em;
-					list-style-type: none;
+				li{
+					margin-bottom: 1.5em;
 
-					li{
-						margin-bottom: 1.5em;
+					a{
+						color:  $secondary-color;
 
-						a{
-							color:  $secondary-color;
-
-						}
 					}
 				}
 			}
 		}
+	}
+	
+	.contentInfo{
+		width: 75%;
+		max-width: 75%;
+		margin-top: 20px;			
 
 		.boxInfo{
 			padding: 5px;
 			margin-top: 20px;
+			margin-bottom: 20px;
 
 			h4{
 				text-align: center;
@@ -174,10 +184,173 @@ html{
 				font-family: 'Roboto', sans-serif;
 				padding-top: 15px;
 			}
+
+			section{
+				display: flex;
+				justify-content: flex-end;
+				
+				a{
+					color: $primary-color;
+					&:link{
+						color: $primary-color-detail;
+							text-decoration: none;
+					}
+
+					&:visited{
+						color: $primary-color-detail;
+							text-decoration: none;
+					}
+				
+
+					span{
+						font-family: 'Roboto', sans-serif;
+						font-size: 15px;
+					}
+	
+					i{
+						margin: 0 5px;
+						font-size: 16px;
+					}
+				}
+			}
 		}
 	}
 }
 /* /CONTENT*/
+
+/* CONTENT-Contact */
+.form{
+	display: flex;
+	flex-direction: column;
+
+	.row{
+		margin-top: 35px;
+
+		.col1{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+
+			h2{
+				display: flex;
+				font-family: 'Josefin Sans', sans-serif;
+			}
+	
+			hr{
+				margin: 2px 0;
+				border: 1px solid $primary-color;
+				width: 100%;
+			}
+
+			form{
+				padding: 25px;
+				max-width: 80%;
+				width: 80%;
+
+				button{
+					font-family: 'Josefin Sans', sans-serif;
+					border: 2px solid $primary-color-detail;
+					padding: 10px 20px;
+					color: $secondary-color;
+					background-color: $primary-color;
+					transition: all 0.5s ease;
+
+					&:hover {
+						background-color: #011e58;
+						box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+					}
+				}
+
+				.item-form{
+					padding: 12px 20px;
+  					margin: 8px 0;
+					margin-bottom: 1em;
+					width: 100%;
+					border: 2px solid rgb(214, 214, 214);
+					transition: border 0.5s ease;
+
+					&:focus {
+						border: 2px solid $primary-color;
+					}
+				}
+			}
+		}
+
+		.col2{
+			display: flex;
+			justify-content: center;
+			text-align: center;
+			flex-direction: column;
+
+			h2{
+				display: flex;
+				font-family: 'Josefin Sans', sans-serif;
+			}
+	
+			hr{
+				margin: 2px 0;
+				border: 1px solid $primary-color;
+				width: 100%;
+			}
+
+			p{
+				font-family: 'Kalam', cursive;
+				font-size: 20px;
+				margin: 0;
+				padding-top: 25px;
+			}
+
+			h6{
+				font-family: 'Roboto', sans-serif;
+				font-weight: bold;
+				margin: 0;
+				padding-top: 1em; 
+			}
+
+			h2{
+				display: block;
+			}
+
+			section{
+				max-width: 100%;
+				width: 100%;
+				height: 100%;
+				display: flex;
+				align-items: flex-end;
+				justify-content: center;
+				padding: 25px;
+				
+				iframe{
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+	}
+}
+
+/* /CONTENT-Contact */
+
+/* CONTENT-Services */
+.containerServ{
+
+	.row{
+
+		.boxMenu{
+			width: 20% ;
+			max-width: 20% ;
+		}
+
+		.contentInfo{
+			width: 80%;
+		   max-width: 80%;
+	   }
+   }
+}
+/* /CONTENT-Services */
+
+
 
 /* FOOTER*/
 .footer{

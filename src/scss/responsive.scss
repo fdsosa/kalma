@@ -1,5 +1,8 @@
+@import 'variables';
+
 /* NAVBAR */
 .navbar{
+
     a{
         text-align: center;
     }
@@ -7,28 +10,76 @@
 
 /* TITLE */
 #titleSection{
-    #titulo{
-        font-size: 140px;
-    }
+	#carousel{
+		.carousel-inner{
+			.overlay{
+				.container{
+					.row{
+						.col{
+							#titulo{
+								font-size: 140px;
+							}
+	
+							#subTitulo{
+								font-size: 60px;
+                            }
+						}
+						#auxServ{
 
-    #subTitulo{
-        font-size: 60px;
-    }
-}
-
-/* CONTENT */
-.container-fluid{
-    margin: 0;
-
-    #gridInfo{
-        margin-bottom: 0;
-        
-        .boxInfo{
-            border-radius: 0;
-            margin: 0;
+							#titulo{
+								font-size: 120px;
+							}
+						}
+                    }
+                }
+            }
         }
     }
-}
+}          
+/* CONTENT */
+#gridInfo{
+	margin: 0;
+
+	.row{
+        flex-direction: row;
+
+        .boxMenu{
+			width: 25%;
+            max-width: 25%;
+
+            ul{
+                padding: 0;
+            }
+        }
+        
+        .contentInfo{
+			width: 75%;
+            max-width: 75%;
+            margin-top: 20px;
+
+            .boxInfo{
+                padding: 15px 30px;
+				margin-top: 20px;
+                margin-bottom: 10px;
+            }    
+        }    
+    }
+}    
+
+.form{
+	.row{
+        div{
+            padding: 30px;
+
+            h2{
+                font-size: 40px;
+            }
+        }
+        section{
+            min-height: 60%;
+        }
+    }
+}        
 
 /* FOOTER */
 .footer{
