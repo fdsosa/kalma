@@ -5,13 +5,6 @@
 	<include src="head-frameworks"></include>	    
 	<include src="head-metatags"></include>
 	<title>Reiki</title>
-	<style>
-		@media screen and (max-width: 480px){
-			.gridContainer{
-				grid-template-columns: 1fr;
-			}
-		}
-	</style>
 </head>
 <body>
 	<div class="containerPrincipal">
@@ -20,7 +13,7 @@
 		<!-- /NAV -->
 		
 		<!-- TITULO -->
-		<section id="sectionTitulo">
+		<section id="titleSection">
 			<div id="carousel" class="carousel slide p-0" data-ride="carousel" data-pause="false">
 			  <div class="carousel-inner">
 			    <div class="carousel-item active">
@@ -44,56 +37,99 @@
 		<!-- TITULO -->
 
 		<!-- CONTENT -->
-		<div class="container-fluid mt-lg-4" id="gridInfo">
+		<div class="container-fluid mt-lg-4 containerServ" id="gridInfo">
 			<div class="row">
-				<div class="col-lg-10 offset-lg-1 boxInfo">
-					<h4>Origen del Reiki</h4>
-					<p>El Reiki ha estado entre nosotros desde el principio de los tiempos. El hombre de Lemuria y de la Atlántida ya lo conocía. A finales del siglo XIX, el 15 de agosto de 1865, nació en Japón, Micao Usui: el redescubridor del reiki.
-					La palabra Reiki es de origen japonés, significa fuerza o energía universal. Es una técnica milenaria de sanación, reprogramación de los acontecimientos pasados de nuestra vida, y de planificación del futuro en armonía.
-					</p>
+				<div class="col-3 col-sm-10 boxMenu">
+					<div class="row" id="menuSection">
+						<h4>Menú</h4>
+						<ul>
+							<li><a href="#org">Origenes</a></li>
+							<li><a href="#util">Utilidad</a></li>
+							<li><a href="#vent">Ventajas</a></li>
+							<li><a href="#funct">Funcionamiento</a></li>
+						</ul>
+					</div>
+					<div class="row">
+						<h4>Servicios</h4>
+						<ul>
+							<li><a href="digitopuntura.html">Digitopuntura</a></li>
+							<li><a href="reiki.html">Reiki</a></li>
+							<li><a href="reflexologia.html">Reflexología</a></li>
+						</ul>
+					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-10 offset-lg-1 boxInfo">
-					<h4 class="text-align-center">¿Para qué sirve?</h4>
-					<p>La reflexología se ha convertido en un método terapéutico muy efectivo para aliviar enfermedades y devolverle al cuerpo 	la vitalidad perdida. Con esta técnica se obtienen cambios no solo físicos, también se ven resultados orgánicos, químicos e incluso neurológicos.
-					</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-10 offset-lg-1 boxInfo">
-					<h4>Ventajas del Reiki</h4>
-					<ul>
-						<li>Es una energía inofensiva que no produce daño.</li>
-						<li>Alivia rapidamente los dolores físicos.</li>
-						<li>Es rápida segura y eficiente.</li>
-						<li>No tiene contraindicacciones, es compatiblecon cualquier tipo de terapia.</li>
-					</ul>
-					<p>La energía Reiki surte 5 efectos esenciales que estan relacionados entre sí:</p>
-					<ul>
-						<li>Produce una profunda relajación.</li>
-						<li>Libera la energiá bloqueada.</li>
-						<li>Desintoxica.</li>
-						<li>Aporta energía vital curativa.</li>
-						<li>Eleva la frecuencia vibratoria del cuerpo.</li>
-					</ul>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-10 offset-lg-1 boxInfo">
-					<h4>Funcionamiento</h4>
-					<p>En una persona sana, la energía circula libremente por el cuerpo físico, fluyendo por caminos: chakras y meridianos energeticas. También se encuentra rodeando nuestro campo áurico. Los chakras son centros energéticos coloridos y redondos, responsables del flujo energético en el cuerpo. Tienen como función especial, absorber la energía universal, metabolizarla, alimentar nuestra áurea y emitir energía al exterior. Por su intermedio perdemos energía cuando estamos ante un sufrimiento fisico o emocional.
-					El tamaño y color de cada chakra dependerá de las vibraciones que emitamos, así como nuestro grado de evolución espiritual. La fuerza de Reiki nutre nuestros órganos y células, haciendo que todo nuestro cuerpo funcione correctamente
-					Cuando se bloquean los caminos y se interrumpen la circulación de la energía, se produce una desfunción en nuestros órganos y tejidos, es decir: la enfermedad
-					Las manos del reikiano, canalizan energía capaz de desolver tales bloqueos. Basta con que las apoye sobre él o los chakras afectados para que la energía de Reiki huya por sí misma y llegue a quien la necesita.
-					Los bloqueos energéticos pues, generados por sentimientos negativos, se fiajn primeramente, y con mucha intensidad en los chakras. Esto provoca que la energía no fluya, y así perdemos nuestro estado de armonía.
-					</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-10 offset-lg-1 boxInfo">
-					<h4>Importante</h4>
-					<p>No es religión, no requiere de convicciones filosóficas específicas.</p>
+	
+				<div class="col-9 contentInfo">
+					<div class="row">
+						<div class="col-lg-10 offset-lg-1 boxInfo" id="org">
+							<h4>Origen del Reiki</h4>
+							<p>El Reiki ha estado entre nosotros desde el principio de los tiempos. El hombre de Lemuria y de la Atlántida ya lo conocía. A finales del siglo XIX, el 15 de agosto de 1865, nació en Japón, Micao Usui: el redescubridor del reiki.
+								La palabra Reiki es de origen japonés, significa fuerza o energía universal. Es una técnica milenaria de sanación, reprogramación de los acontecimientos pasados de nuestra vida, y de planificación del futuro en armonía.
+							</p>
+							<section>
+								<a href="#nav">
+									<i class="fas fa-chevron-up"></i>
+									<span>Volver</span>
+								</a>
+							</section>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-10 offset-lg-1 boxInfo" id="util">
+							<h4>¿Para qué sirve?</h4>
+							<p>La reflexología se ha convertido en un método terapéutico muy efectivo para aliviar enfermedades y devolverle al cuerpo 	la vitalidad perdida. Con esta técnica se obtienen cambios no solo físicos, también se ven resultados orgánicos, químicos e incluso neurológicos.
+							</p>
+							<section>
+								<a href="#nav">
+									<i class="fas fa-chevron-up"></i>
+									<span>Volver</span>
+								</a>
+							</section>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-10 offset-lg-1 boxInfo" id="vent">
+							<h4>Ventajas del Reiki</h4>
+							<ul>
+								<li>Es una energía inofensiva que no produce daño.</li>
+								<li>Alivia rapidamente los dolores físicos.</li>
+								<li>Es rápida segura y eficiente.</li>
+								<li>No tiene contraindicacciones, es compatiblecon cualquier tipo de terapia.</li>
+							</ul>
+							<p>La energía Reiki surte 5 efectos esenciales que estan relacionados entre sí:</p>
+							<ul>
+								<li>Produce una profunda relajación.</li>
+								<li>Libera la energiá bloqueada.</li>
+								<li>Desintoxica.</li>
+								<li>Aporta energía vital curativa.</li>
+								<li>Eleva la frecuencia vibratoria del cuerpo.</li>
+							</ul>
+							<section>
+								<a href="#nav">
+									<i class="fas fa-chevron-up"></i>
+									<span>Volver</span>
+								</a>
+							</section>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-10 offset-lg-1 boxInfo" id="funct">
+							<h4>Funcionamiento</h4>
+							<p>
+								En una persona sana, la energía circula libremente por el cuerpo físico, fluyendo por caminos: chakras y meridianos energeticas. También se encuentra rodeando nuestro campo áurico. Los chakras son centros energéticos coloridos y redondos, responsables del flujo energético en el cuerpo. Tienen como función especial, absorber la energía universal, metabolizarla, alimentar nuestra áurea y emitir energía al exterior. Por su intermedio perdemos energía cuando estamos ante un sufrimiento fisico o emocional.
+								El tamaño y color de cada chakra dependerá de las vibraciones que emitamos, así como nuestro grado de evolución espiritual. La fuerza de Reiki nutre nuestros órganos y células, haciendo que todo nuestro cuerpo funcione correctamente
+								Cuando se bloquean los caminos y se interrumpen la circulación de la energía, se produce una desfunción en nuestros órganos y tejidos, es decir: la enfermedad
+								Las manos del reikiano, canalizan energía capaz de desolver tales bloqueos. Basta con que las apoye sobre él o los chakras afectados para que la energía de Reiki huya por sí misma y llegue a quien la necesita.
+								Los bloqueos energéticos pues, generados por sentimientos negativos, se fiajn primeramente, y con mucha intensidad en los chakras. Esto provoca que la energía no fluya, y así perdemos nuestro estado de armonía.
+							</p>
+							<section>
+								<a href="#nav">
+									<i class="fas fa-chevron-up"></i>
+									<span>Volver</span>
+								</a>
+							</section>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
