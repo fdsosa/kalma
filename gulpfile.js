@@ -100,10 +100,4 @@ gulp.task('watch', gulp.series(['build:dev'], function(done) {
 
 gulp.task('build:prod', gulp.series('build:html:prod', 'build:sass:prod', 'build:files:prod'));
 
-gulp.task('default', gulp.series(['watch'], function(){
-  browserSync({
-      server: {
-        baseDir: './.temp'
-      }
-    });
-}));
+gulp.task('default', gulp.series(['watch']));
