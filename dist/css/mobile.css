@@ -1,0 +1,58 @@
+/* TITLE */
+#titleSection #carousel .carousel-inner .overlay .container .row .col #titulo {
+  font-size: 100px; }
+
+#titleSection #carousel .carousel-inner .overlay .container .row .col #subTitulo {
+  font-size: 60px; }
+
+#titleSection #carousel .carousel-inner .overlay .container .row #auxServ #titulo {
+  font-size: 65px; }
+
+/* CONTENT */
+#gridInfo {
+  margin: 0; }
+  #gridInfo .row {
+    flex-direction: column; }
+    #gridInfo .row .boxMenu {
+      width: 100%;
+      max-width: 100%;
+      padding: 0;
+      margin-top: 0; }
+      #gridInfo .row .boxMenu .row {
+        margin: 0; }
+        #gridInfo .row .boxMenu .row ul {
+          text-align: center;
+          padding: 0; }
+    #gridInfo .row .contentInfo {
+      width: 100%;
+      max-width: 100%; }
+      #gridInfo .row .contentInfo .boxInfo {
+        padding: 1em;
+        margin-top: 0px; }
+        #gridInfo .row .contentInfo .boxInfo h4 {
+          font-size: 1.7rem; }
+        #gridInfo .row .contentInfo .boxInfo p {
+          font-size: 1.1rem;
+          text-align: center;
+          line-height: 2; }
+
+.form .row .col1 hr {
+  width: 80% !important; }
+
+.form .row .col1 form {
+  max-width: 100% !important;
+  width: 100% !important; }
+  .form .row .col1 form button {
+    width: 100%; }
+
+.form .row .col2 {
+  margin-bottom: 40px; }
+
+.form .row div {
+  margin: 20px 0 50px 0;
+  padding: 10px; }
+  .form .row div h2 {
+    font-size: 36px; }
+
+.form .row section {
+  min-height: 60%; }
