@@ -1,11 +1,12 @@
-var gulp        = require('gulp');
-var clean       = require('gulp-clean');
+var gulp = require('gulp');
+var clean = require('gulp-clean');
 var browserSync = require('browser-sync');
-var reload      = browserSync.reload;
-var teddy       = require('gulp-teddy').settings({
+var reload = browserSync.reload;
+var teddy = require('gulp-teddy').settings({
     setTemplateRoot: 'src/templates/',
     compileAtEveryRender: true
 });
+var gulp = require('gulp');
 var sass          = require('gulp-sass');
     sass.compiler = require('node-sass');
 
@@ -22,8 +23,7 @@ gulp.task('build:html', function () {
 
     return gulp
       .src([
-        './src/*.html',
-        '!.src/templates'
+        './src/**/*.html'
       ])
       .pipe(teddy.compile())
       .pipe(gulp.dest('./.temp'))

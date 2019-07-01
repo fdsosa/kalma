@@ -15,10 +15,6 @@ server.get('/home', function (req, res) {
   return res.sendFile(path.join(__dirname, folderBuild, 'index.html'));
 });
 
-server.get('/contact', function (req, res) {
-  return res.sendFile(path.join(__dirname, folderBuild, 'contact.html'));
-});
-
 server.listen(port, function () {
   console.log('Mi servidor esta en linea en el puerto ' + port);
 });
